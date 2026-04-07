@@ -1,10 +1,15 @@
 :root{
     --branco: #ffffff;
+    --preto: #000000;
+    --sombra: rgba(0, 0, 0, 0.3) ;
     --primaria: #282937;
     --secundaria: #00078c;
     --terciaria: #0a0f77;
     --quartenaria: #1c1a37;
     --quinaria: #140f72;
+    --cinza-ferro: #474747;
+    --carvao:#595959;
+    --cinza-chumbo:#404040;
 }
 
 * {
@@ -21,4 +26,32 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.5s ease;
+}
+/* Quando aparece na tela */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor piscando */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
