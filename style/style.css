@@ -1,0 +1,103 @@
+@import url(./geral.css);
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--primaria);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--branco);
+}
+
+header nav{
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+}
+
+header nav ul li a:hover {
+    transform: translateY(-5px);
+    text-decoration: underline;
+}
+
+section {
+    width: 100%;
+}
+
+.content-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 80vh;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--quartenaria);
+}
+
+.content-hero-h1 h1 {
+    font-size: 8vw;
+    color: var(--branco);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.minha-foto {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid var(--dourado);
+}
+
+.sobre-mim {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 10%;
+}
+
+.sobre-mim img {
+    width: 300px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.sobre-mim-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.sobre-mim h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}

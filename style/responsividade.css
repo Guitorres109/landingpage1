@@ -1,0 +1,43 @@
+@import url(./style.css);
+@import url(./geral.css);
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content-hero {
+            flex-direction: column;
+            height: auto;
+            text-align: left;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .content-hero-h1 h1 {
+            font-size: 10vw;
+        }
+
+        .minha-foto {
+            position: static;
+            width: 250px;
+            margin-top: 20px;
+            display: none;
+        }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-hero h1 {
+        font-size: 12vw;
+    }
+}

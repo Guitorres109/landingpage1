@@ -1,0 +1,24 @@
+:root{
+    --branco: #ffffff;
+    --primaria: #282937;
+    --secundaria: #00078c;
+    --terciaria: #0a0f77;
+    --quartenaria: #1c1a37;
+    --quinaria: #140f72;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tinos', serif;
+}
+
+body {
+    background-color: var(--primaria);
+    color: var(--branco);
+}
+
+html {
+    scroll-behavior: smooth;
+}
