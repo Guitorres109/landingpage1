@@ -107,6 +107,12 @@ section {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
+#sobre-mim1{
+    display: block;
+}
+#sobre-mim2{
+    display: none;
+}
 
 .projetos {
     padding: 60px 10%;

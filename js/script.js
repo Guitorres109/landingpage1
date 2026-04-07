@@ -1,3 +1,4 @@
+
 function reveal() {
     const items = document.querySelectorAll('.reveal');
 
