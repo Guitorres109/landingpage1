@@ -39,6 +39,9 @@
     .minha-foto{
         display: none;
     }
+    .card-data{
+        font-size: 9px;
+    }
 }
 @media (max-width: 768px) {
     .content-hero{
@@ -60,6 +63,25 @@
         #sobre-mim2{
             display: block;
         }
+    .slide-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    
+    .slide-content img {
+        height: 300px;
+    }
+    
+    .slide-content p {
+        font-size: 1.1rem;
+    }
+    
+    .card-data{
+        font-size: 9px;
+    }
+
     .social-buttons {
         gap: 1.5rem;
         flex-direction: column;
@@ -86,12 +108,19 @@
     .content-hero h1 {
         font-size: 12vw;
     }
+
+    .sobre-mim img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
     .projetos-container {
         grid-template-columns: 1fr;
     }
 
     .card{
-        height: 400px;
+        height: auto;
     }
     .formacao-container {
         grid-template-columns: 1fr;
