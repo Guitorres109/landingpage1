@@ -7,10 +7,32 @@ const container = document.querySelector(".projetos-container");
 const cards = document.querySelectorAll(".card");
 const imagens = ["./assets/img/image1.png", "./assets/img/image2.png"]
 const frases = [
-    "Profissional de excelência em odontologia",
-    "Especialista em estética do sorriso",
-    "Proporciona um atendimento humanizado e acolhedor",
-    "Garante resultados naturais e surpreendentes"
+    "Excelência em odontologia",
+    "Sorriso com estética",
+    "Atendimento humanizado",
+    "Resultados naturais",
+    "Cuidado com o sorriso",
+    "Odontologia moderna",
+    "Sorrisos mais bonitos",
+    "Confiança ao sorrir",
+    "Precisão e cuidado",
+    "Saúde bucal em foco",
+    "Estética e função",
+    "Transforma sorrisos",
+    "Sorriso perfeito",
+    "Cuidado total",
+    "Estética dental",
+    "Saúde do sorriso",
+    "Confiança renovada",
+    "Toque de precisão",
+    "Beleza natural",
+    "Excelência clínica",
+    "Sorriso saudável",
+    "Tratamento moderno",
+    "Bem-estar bucal",
+    "Detalhes que importam",
+    "Transformação dental",
+    "Resultado impecável"
 ];
 
 function reveal() {
@@ -64,7 +86,7 @@ function mudarImagens() {
     setInterval(() => {
 
         // anima saída
-        imagem.style.transition = "transform 0.5s ease, opacity 0.5s ease";
+        imagem.style.transition = "transform 0.7s ease, opacity 0.3s ease";
         imagem.style.transform = "translateY(-30%)";
         imagem.style.opacity = "0";
 
@@ -90,9 +112,6 @@ function mudarImagens() {
     }, 7000);
 }
 
-function carrocelCards(){
-    container = document.getElementsByClassName(".")
-}
 
 
 // Garante que o HTML já carregou

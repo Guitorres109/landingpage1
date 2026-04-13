@@ -140,49 +140,58 @@ section {
 }
 
 .especializacoes img {
-    margin-top: 50px;
-    width: auto;
-    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
     height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    margin-top: 0;
+    transition: transform 0.3s ease;
 }
 
-.especializacoes-content{
-    margin-top: 50px;
-    max-width: 1300px;
+.especializacoes-content {
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: left;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-.especializacoes-container{
+.especializacoes-container {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
 }
 
-#card-especializacoes{
+#card-especializacoes {
     border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-#card-especializacoes img{
-    width: 80%;
-    height: auto;
+
+#card-especializacoes img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .especializacoes h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 10px;
+    letter-spacing: 0.5px;
 }
-#especializacoes1{
-    display: block;
-}
-#especializacoes2{
-    display: none;
-}
+
 
 .projetos {
     padding: 60px 10%;
@@ -379,9 +388,11 @@ section {
     letter-spacing: 0.5px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.4);
     backdrop-filter: blur(10px);
-    border: 2px solid transparent;
+    border: none; /* <-- corrigido */
     position: relative;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 .social-btn::before {
@@ -414,6 +425,10 @@ section {
 
 .twitter {
     background: linear-gradient(135deg, #2585d3 0%, #12398c 100%);
+}
+
+.tiktok{
+    background: linear-gradient(135deg, #000000 0%, #25F4EE 25%, #FE2C55 50%, #000000 75%, #25F4EE 100%);
 }
 
 .social-btn svg {
